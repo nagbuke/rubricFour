@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rubric 4 | Norie Agbuke</title>
+	
+</head>
+
+<body>
+	<button onclick="showDate()">Click me for the date and time?</button>
+	<header>
+		<h1 id="intro1"></h1>
+		<h2 id="intro2"></h2>
+			<p id="p1"></p>
+			<p id="p2"></p>
+			
+	</header>
+	<ul>
+		<li>JS</li>
+		<li>CSS</li>
+		<li>HTML</li>
+	</ul>
+	
+	
+	<p id="date"></p>
+	<p> Guess which code is my favorite!</p>
+	
+	<button onclick="myFav()">Click Me</button>
+	<p id="p3"></p>
+	
+	
+	<script>
+		
+		function showDate() {
+    		document.getElementById("date").innerHTML = Date();
+			var a = document.createElement("H3");
+    		var b = document.createTextNode("Time Flies");
+    		a.appendChild(b);
+    		document.body.appendChild(a);
+		}
+		
+		function myFav() {
+			var x = document.getElementsByTagName("LI");
+			document.getById("p3").innerHTML = x[0].innerHTML;
+		}
+	
+		
+		document.getElementById("intro1").innerHTML = "Welcome to Rubric 4!";
+		document.getElementById("intro2").innerHTML = "The DOM";
+		document.getElementById("p1").innerHTML = "JavaScript is fun!";
+		
+		var muchFun = document.getElementById("p1");
+		
+		document.getElementByTagName("p.p2").innerHTML;
+	
+		
+		
+
+	</script>
+</body>
+</html>
